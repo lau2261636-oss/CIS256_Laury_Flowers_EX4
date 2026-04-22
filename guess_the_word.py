@@ -23,9 +23,11 @@ def play_game():
 
     print("Guess the word!")
 
+    # This part keeps the game running after attemps are done
     while attempts > 0:
         display = ""
 
+        #this part check each letter in the word 
         for letter in word:
             if letter in guessed:
                 display += letter
@@ -50,6 +52,7 @@ def play_game():
             print("Correct!")
         else:
             print("Wrong!")
+            # if guss is wrong,  lose one attempt
             attempts -= 1
 
     print("You lost! The word was:", word)
