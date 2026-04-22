@@ -4,7 +4,7 @@
 
 import random
 
-# list of words
+# list of words for the game
 words = ["apple", "banana", "grape", "orange"]
 
 # pick random word
@@ -19,7 +19,7 @@ def check_guess(word, guess):
 def play_game():
     word = get_word()
     guessed = []
-    attempts = 6
+    attempts = 10
 
     print("Guess the word!")
 
